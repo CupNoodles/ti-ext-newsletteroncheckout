@@ -1,0 +1,18 @@
+{
+    "code": "cupnoodles.newsletteroncheckout",
+    "name": "Newsletter on Checkout",
+    "description": "Opt-in Newsletter subscription on checkout.",
+    "version": "v1.0.0",
+    "author": "CupNoodles",
+    "icon": {
+      "class": "fas fa-envelope",
+      "backgroundColor": "#1B294B",
+      "color": "#fff"
+    },
+    "homepage": "",
+    "require": {
+      "igniter.cart" : "*",
+      "igniter.user" : "*",
+      "igniter.frontend" : "*"
+    }
+  }
