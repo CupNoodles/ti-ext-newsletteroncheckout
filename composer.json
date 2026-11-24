@@ -1,0 +1,63 @@
+{
+    "name": "cupnoodles/ti-ext-newsletteroncheckout",
+    "type": "tastyigniter-package",
+    "license": "MIT",
+    "description": "Adds an opt-in newsletter checkbox to the TastyIgniter checkout. Subscribers go to the FrontEnd subscriber list and Mailchimp.",
+    "authors": [
+        {
+            "name": "CupNoodles"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "tastyigniter/core": "^v4.5",
+        "tastyigniter/ti-ext-cart": "^v4.5",
+        "tastyigniter/ti-ext-frontend": "^v4.0",
+        "tastyigniter/ti-ext-user": "^v4.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "sampoyigi/testbench": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CupNoodles\\NewsletterOnCheckout\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CupNoodles\\NewsletterOnCheckout\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "tastyigniter-extension": {
+            "code": "cupnoodles.newsletteroncheckout",
+            "name": "Newsletter on Checkout",
+            "icon": {
+                "class": "fa fa-envelope",
+                "color": "#FFFFFF",
+                "backgroundColor": "#1B294B"
+            },
+            "homepage": "https://github.com/CupNoodles/ti-ext-newsletteroncheckout"
+        },
+        "branch-alias": {
+            "dev-master": "4.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "composer/installers": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test:lint": "vendor/bin/pint --test --ansi",
+        "test:lint-fix": "vendor/bin/pint --ansi",
+        "test:pest": "vendor/bin/pest"
+    }
+}
